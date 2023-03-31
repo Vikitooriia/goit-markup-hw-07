@@ -4,9 +4,9 @@
     }  
     
     .team {
-
         display: flex;
         flex-wrap: wrap;
+        flex-direction: initial;
         justify-content: center;
         gap: 64px;
         column-gap: 24px;
@@ -48,5 +48,147 @@
     margin-right: 24px;
     width: 264px;
 }
-   
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px; 
 }
+
+.desc-features {
+    width:356px;
+}
+
+.feature-header {
+    width:356px;
+
+}
+.features {
+    gap: 24px 72px;
+}
+
+.features >li {
+    width: 294px;
+}
+
+.hero {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.hero-title {
+    font-size: 56px;
+    max-width: 494px;  
+    margin: 0 auto 40px;
+   }
+
+   .modal {
+    width: 410px;
+   }
+
+   .site-nav {
+    display: flex;
+    margin-left: 76px;
+}
+   .auth-nav {
+    display: flex;
+    align-items: center;
+}
+.auth-nav>li:not(:last-child) {
+    margin-right: 40px;
+}
+address{
+    margin-left: auto;
+}
+
+
+.current::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--focus);
+    border-radius: 2px;
+    bottom: 0;
+    left: 0;    
+}
+
+.container-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding:unset;
+
+}
+
+.header-nav-wrap {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background-color: transparent;
+    max-width: unset;
+    max-height: unset;
+    position: static;
+    z-index: 999;
+}
+
+.menu-close {
+    display: none;
+}
+.main-nav {
+    display: flex;
+    
+}
+.menu-button {
+    display: none;
+}
+
+.main-nav-mobile {
+    display: none;
+}
+
+.address-mobile {
+    display: none;
+}
+.page-header {
+    display: flex;
+}
+.social-list-menu {
+    display: none;
+}
+
+.site-nav .link {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500; 
+}
+
+.auth-nav .link {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500; 
+}
+.main-nav {
+    padding-bottom: unset;   
+
+}
+.site-nav .link {
+    position: relative;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: unset;
+}
+
+.auth-nav {
+    display: block;
+}
+
+address {
+    display: flex;
+    margin-left: auto;
+}
+}
+
+

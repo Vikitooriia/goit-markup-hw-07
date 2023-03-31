@@ -72,40 +72,122 @@ span {
 .main-nav {
     display: flex;
     align-items: center;
+    padding-bottom: 80px;
 }
 
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1158px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     
 }
 
-@media screen and (min-width: 480px) {
-    .container  {
-        max-width: 428px;}
- 
+
+.container-header {
+    display: flex;
+    box-sizing: border-box;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
+.social-list-menu {
+    display: flex;
+    gap: 40px;
+    margin-top: 48px;
+}
+ 
+.header-nav-wrap{
+    position: relative;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    padding-top: 80px;
+    z-index: 1000;
+    overflow-y: scroll;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.mobile-menu .is-open {
+    display: block;
+    transform: translateX(0);
+}
+.modal-svg-close{
+    fill: currentColor;
+}
+.menu-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 32px;
+    height: 22px;
+
+}
+
+.svg-menu {
+    stroke: rgba(46, 47, 66, 1);
+    
+}
+
+
+.menu-close{
+    background-color: var(--button);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    position: absolute;
+    top: 24px;
+    right: 24px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 24px; 
+    height: 24px;
+    cursor: pointer;
+    color: var(--title-text-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-close:is(:hover, :focus) {
+    color: white;
+    background-color: var(--focus);
+}
+
+.main-nav, address {
+    display: none;
+}
 
 /*site nav*/
-
-.site-nav {
-    display: flex;
-    margin-left: 76px;
-}
 
 
 .site-nav .link {
     position: relative;
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    margin-bottom: 40px;
     color: var(--title-text-color);
     text-decoration: none;
-    font-weight: 500; 
+    font-size: 36px;
+    font-weight: 700; 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
@@ -113,40 +195,35 @@ span {
     margin-right: 40px;
 }
 
-.current {
-    color: var(--focus);
-    position: relative;
-}
-.current::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: var(--focus);
-    border-radius: 2px;
-    bottom: 0;
-    left: 0;    
-}
-
-.link.current {
-    color: var(--focus);
-}
-
 /*auth nav*/
+
 .auth-nav {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 40px;
 }
 
-.auth-nav .link {
+.auth-tel .link{
+    font-family: 'Roboto' sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.1;
+    font-style: normal;
+    margin-bottom: 24px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--accent-color);
+   
+}
+.auth-mail .link {
+    font-size: 20px;
+    font-weight: 500; 
     color: var(--accent-color);
     text-decoration: none;
     font-style: normal;
-    padding-top: 24px;
-    padding-bottom: 24px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .auth-nav>li:not(:last-child) {
     margin-right: 40px;
@@ -154,39 +231,46 @@ span {
 
 .link:hover,
 .link:focus {
-    color: var(--focus);   
-    
+    color: var(--focus);      
 }
 
-address{
-    margin-left: auto;
+.link.current {
+    color: var(--focus);
 }
+
+.current {
+    color: var(--focus);
+    position: relative;
+}
+
 
 /*hero*/
 
  .hero{
+    padding-left: 0;
+    padding-right: 0;
     background-color: var(--title-text-color);
     text-align: center;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding: 112px 54px;
     background-image: linear-gradient(rgba(46,47,66,0.7),
      rgba(46,47,66,0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
-  
+     
 }
 
+
+
 .hero-title {
-    margin: 0 auto 48px;
+    margin: 0 auto 72px;
     font-weight: 700;
     line-height: 1.07;
-    font-size: 56px;
+    font-size: 36px;
     color: white;
     font-family: inherit;
     initial-letter: inherit;
-    width: 494px;  
+    max-width: 320px;  
 }
 
 /*button*/
@@ -238,7 +322,7 @@ address{
     flex-direction: column;
     top: 50%;
     left: 50%;
-    width: 410px;
+    width: 392px;
     height: 584px;
     padding: 72px 24px 24px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -428,22 +512,28 @@ address{
 /*features*/
 
 .about-list {
-    display: flex;
+    display: none;
     text-align: center;
     justify-content:center;
     margin-bottom: 8px;
     background-color: var(--background-color);
     height: 112px;
-    border-radius: 4px;
+    border-radius: 4px;    
+}
+
+.desc-features {
+    width: 396px;
+    margin-bottom: 72px;
 }
 
 .about-icon{
-    display: flex;
+    display: none;
     justify-content: center;
     align-self: center;
+
 }
 .section {
-    padding-top: 120px;   
+    padding-top: 120px; 
 }
 
 .section-title,
@@ -472,12 +562,9 @@ address{
     overflow: hidden;
 }
 
-.features {
-    display: flex;
-}
 
 .features >li {
-    width: 264px;
+    width: 100%;
 }
 
 .features >li:not(:last-child) {
@@ -486,18 +573,20 @@ address{
 
 .team-header,
 .feature-header {
+    text-align: center;
     margin-top: 0;
     margin-bottom: 8px;
     color: var(--title-text-color) ;  
     font-family: inherit;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 36px;
+    font-weight: 700;
     line-height: 1.2;
 }
 
 /*work-list*/
 
 .section-two {
+    display: none;
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 120px;
@@ -517,6 +606,10 @@ address{
 
 .section-team .team-header {
     text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500px;
+    letter-spacing: 0.02em;
 }
 
 .section-team {
@@ -530,8 +623,13 @@ address{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+
 .team {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
 }
 
 .team .desc {
@@ -583,6 +681,7 @@ address{
 .customers-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     row-gap: 72px;
     gap: 24px;
 }
@@ -705,8 +804,6 @@ address{
 
 .subscribe-box {
     display: block;
-    
-
 }
 .footer-span {
     display: block;
@@ -741,7 +838,7 @@ address{
 
 .sub-input {
     margin-bottom: 16px;
-    width: 396px;
+    width: 100%;
     height: 40px;
     padding-left: 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
