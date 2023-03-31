@@ -118,12 +118,8 @@ span {
 
 }
 
-.mobile-menu{
-    display: none;
-}
 
 .mobile-menu .is-open {
-    display: block;
     transform: translateX(0);
 }
 .modal-svg-close{
