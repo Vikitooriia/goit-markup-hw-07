@@ -2,22 +2,22 @@
     .container{
         max-width: 1158px;    
     } 
-
+    /*team*/
     .team {
        display: flex;
        flex-wrap: nowrap;
        flex-direction: initial;
        justify-content: space-between;
     }
-    
+    /*customers*/   
     .customers-list {
         gap: 24px;
     }
-
+    /*footer*/ 
     .footer-container {
         display: flex;
-        width: 100%;}
-
+        width: 100%;
+    }
 
    .logo-slogan {
     margin-right: 64px;
@@ -30,7 +30,8 @@
    .section-two {
     display: flex;
    }
-   
+
+   /*features*/  
    .features {
     display: flex;
     flex-wrap: nowrap;
@@ -60,6 +61,7 @@
     text-align: left;
    }
 
+   /*hero*/
    .hero {
     padding-top: 188px;
     padding-bottom: 188px;
@@ -69,17 +71,28 @@
     max-width: 494px;  
     margin: 0 auto 48px;
    }
+   .hero {
+    background-image: linear-gradient(rgba(46,47,66,0.7),
+    rgba(46,47,66,0.7)), url(../images/people-desk-1x.jpg); 
+    }
+    @media (min-device-pixel-ratio : 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46,47,66,0.7),
+     rgba(46,47,66,0.7)), url(../images/people-desk-2x.jpg);
+    }
+}
 
-   .modal {
+/*main-nav*/
+.modal {
     width: 410px;
    }
-   .site-nav {
+.site-nav {
     display: flex;
     margin-left: 76px;
 }
-
-
-   .auth-nav {
+.auth-nav {
     display: flex;
     align-items: center;
 }
@@ -133,4 +146,5 @@
 address {
     margin-left: auto;
 }
+
 }

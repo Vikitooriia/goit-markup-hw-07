@@ -83,7 +83,9 @@ span {
     padding-right: 15px;
     
 }
-
+.address-mobile {
+    display: flex;
+}
 
 .container-header {
     display: flex;
@@ -98,10 +100,7 @@ span {
     margin-top: 48px;
 }
  
-.header-nav-wrap{
-    position: relative;
-}
-
+/*mobile-menu*/
 .mobile-menu {
     display: flex;
     flex-direction: column;
@@ -109,6 +108,8 @@ span {
     background-color: #fff;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
     padding-left: 40px;
     padding-top: 80px;
     z-index: 1000;
@@ -118,8 +119,7 @@ span {
 
 }
 
-
-.mobile-menu .is-open {
+.mobile-menu.is-open {
     transform: translateX(0);
 }
 .modal-svg-close{
@@ -146,14 +146,13 @@ span {
     
 }
 
-
 .menu-close{
     background-color: var(--button);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     position: absolute;
     top: 24px;
-    right: 24px; 
+    right: 24px;
     display: flex; 
     align-items: center; 
     justify-content: center; 
@@ -173,8 +172,11 @@ span {
     display: none;
 }
 
-/*site nav*/
+.address-mobile {
+    margin-top: 48px;
+}
 
+/*site nav*/
 
 .site-nav .link {
     position: relative;
@@ -199,18 +201,21 @@ span {
     gap: 40px;
 }
 
+.address-mobile>.auth-nav {
+    margin-top: 60px;
+}
 .auth-tel .link{
     font-family: 'Roboto' sans-serif;
     font-weight: 600;
     font-size: 36px;
     line-height: 1.1;
     font-style: normal;
-    margin-bottom: 24px;
     text-transform: capitalize;
     text-decoration: none;
-    color: var(--accent-color);
-   
+    color: var(--accent-color);   
 }
+
+
 .auth-mail .link {
     font-size: 20px;
     font-weight: 500; 
@@ -249,13 +254,21 @@ span {
     text-align: center;
     padding: 112px 54px;
     background-image: linear-gradient(rgba(46,47,66,0.7),
-     rgba(46,47,66,0.7)), url(../images/people-office.jpg);
+     rgba(46,47,66,0.7)), url(../images/people-mob-1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
      
 }
 
+@media (min-device-pixel-ratio : 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46,47,66,0.7),
+     rgba(46,47,66,0.7)), url(../images/people-mob-2x.jpg);
+    }
+}
 
 
 .hero-title {

@@ -24,6 +24,7 @@
 }
 
 
+
 .about-icon{
     display: none;
 }
@@ -78,7 +79,7 @@
 
 }
 
-.mobile-menu .is-open {
+.mobile-menu.is-open {
     transform: translateX(0);
 }
 .modal-svg-close{
@@ -110,7 +111,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     position: absolute;
-    top: 24px;
+    top: 0;
     right: 24px; 
     display: flex; 
     align-items: center; 
@@ -143,4 +144,3 @@
 
 }
 
-}
