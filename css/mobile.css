@@ -2,7 +2,7 @@
     .container  {
         max-width: 428px;}
  
-
+/*hero*/
 .hero {
     padding-left: 0;
     padding-right: 0;
@@ -23,41 +23,53 @@
     display: none; 
 }
 
-
-
 .about-icon{
     display: none;
 }
 
+/*features*/  
 .feature-header {
     max-width: 396px;
 }
 .about-list {
     width: 100%;
 }
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+}
 
 .section-two {
     display: none;
 }
 
+.desc-feature {
+    font-weight: 500;
+}
+
+/*team*/
 .team {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 72px;
 }
+
+/*customers*/  
 .customers-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 72px;
-    gap: 24px;
 }
 
+/*footer*/ 
 .sub-input {
     width: 100%;
 }
 
+
+/*mobile-menu*/
 .header-nav-wrap{
     position: relative;
 }
@@ -140,6 +152,12 @@
 }
 .mobile-menu .menu-button {
     display: none;
+}
+
+
+.logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 }

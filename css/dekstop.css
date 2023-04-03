@@ -26,7 +26,7 @@
    .footer-social-icons {
     margin-right: 48px;
    }
-
+   /*work-list*/
    .section-two {
     display: flex;
    }
@@ -53,6 +53,8 @@
 
    .desc-features {
     width:264px;
+    font-weight: 400;
+   
    }
    .feature-header {
     width: 264px;
@@ -63,6 +65,7 @@
 
    /*hero*/
    .hero {
+    max-width: 1600px;
     padding-top: 188px;
     padding-bottom: 188px;
    }
@@ -72,6 +75,7 @@
     margin: 0 auto 48px;
    }
    .hero {
+    background-size: cover;
     background-image: linear-gradient(rgba(46,47,66,0.7),
     rgba(46,47,66,0.7)), url(../images/people-desk-1x.jpg); 
     }
