@@ -182,9 +182,11 @@
         flex-basis: calc((100%-24px) / 3);
         row-gap: 72px;
         column-gap: 24px;
-        width: 565px;
-      
+        width: 565px; 
     }
+    
+    .footer-social-icons {
+    margin-bottom: unset; }
 
     .footer-section {
         padding-top: 96px;
@@ -195,6 +197,7 @@
     }
    .logo-slogan {
         display: block;
+        margin-bottom: unset;
    }
    .slogan {
         text-align: left;

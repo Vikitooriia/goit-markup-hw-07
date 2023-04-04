@@ -3,6 +3,11 @@
         max-width: 1158px;    
     } 
     /*team*/
+.section-team {
+    padding-top: 120px;
+    padding-bottom: 120px; 
+}
+
     .team {
        display: flex;
        flex-wrap: nowrap;
@@ -10,6 +15,11 @@
        justify-content: space-between;
     }
     /*customers*/   
+
+    .section-customers {
+        padding-top: 120px;
+        padding-bottom: 120px; 
+    }
     .customers-list {
         gap: 24px;
     }
@@ -37,6 +47,11 @@
     margin-right: 48px;
    }
    /*work-list*/
+
+   .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+   }
    .section-two {
     display: flex;
     padding-top: unset;
