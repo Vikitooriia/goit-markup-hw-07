@@ -13,11 +13,21 @@
     .customers-list {
         gap: 24px;
     }
+
+    .customer-link {
+        width: 168px;
+    }
     /*footer*/ 
     .footer-container {
         display: flex;
         width: 100%;
     }
+
+    .footer-section {
+        padding-top: 120px;
+        padding-bottom: 120px; 
+    }
+
 
    .logo-slogan {
     margin-right: 64px;
@@ -29,6 +39,7 @@
    /*work-list*/
    .section-two {
     display: flex;
+    padding-top: unset;
    }
 
    /*features*/  

@@ -44,7 +44,7 @@
     display: none;
 }
 
-.desc-feature {
+.desc-features {
     font-weight: 500;
 }
 
@@ -63,6 +63,7 @@
     justify-content: center;
 }
 
+
 /*footer*/ 
 .sub-input {
     width: 100%;
@@ -70,9 +71,7 @@
 
 
 /*mobile-menu*/
-.header-nav-wrap{
-    position: relative;
-}
+
 
 .mobile-menu {
     display: flex;
@@ -114,16 +113,15 @@
 }
 
 .svg-menu {
-    stroke: rgba(46, 47, 66, 1);
-    
+    stroke: rgba(46, 47, 66, 1);   
 }
 
 .menu-close{
+    position: absolute;
     background-color: var(--button);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    position: absolute;
-    top: 0;
+    top: 24px;
     right: 24px; 
     display: flex; 
     align-items: center; 
@@ -143,9 +141,6 @@
     display: none;
 }
 
-.mobile-menu .menu-close {
-    display: none;
-}
 
 .mobile-menu .is-open .menu-close {
     display: block;

@@ -130,12 +130,7 @@
 
 }
 
-.feature-icons {
-   
-}
-
     .desc-features {
-   
     font-weight: 500;
 }
 
@@ -149,6 +144,10 @@
         flex-wrap: wrap;
         column-gap: 24px;
         row-gap: 72px;
+    }
+
+    .features > li {
+        width:356px;
     }
 
     /*team*/
@@ -168,10 +167,13 @@
         row-gap: 72px;
         column-gap: 24px;
     }
+    .customer-link {
+    width: 168px;
+}
 
     .section-team {
         padding-top: 96px;
-        padding-bottom: 104px;
+        padding-bottom: 96px;
     }
       /*footer*/  
     .footer-container {
@@ -193,7 +195,6 @@
     }
    .logo-slogan {
         display: block;
-        margin-right: 24px;
    }
    .slogan {
         text-align: left;
